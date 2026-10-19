@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minenana.desglose.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   
+   <HBox alignment="CENTER_LEFT" spacing="10.0">
+      <Label text="Dinero:" />
+      <TextField fx:id="txtDinero" prefWidth="100.0" />
+      <Button fx:id="btnLimpiar" onAction="#handleLimpiar" text="X" />
+      <Button fx:id="btnDesglosar" onAction="#handleDesglosar" text="Desglosar" />
+   </HBox>
+
+   <GridPane hgap="50.0" vgap="5.0" alignment="CENTER">
+      <Label text="Billetes de $500" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+      <TextField fx:id="txt500" editable="false" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+      <Label text="Billetes de $200" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      <TextField fx:id="txt200" editable="false" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+      <Label text="Billetes de $100" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      <TextField fx:id="txt100" editable="false" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+      <Label text="Billetes de $50" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+      <TextField fx:id="txt50" editable="false" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+      <Label text="Billetes de $20" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+      <TextField fx:id="txt20" editable="false" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+      <Label text="Monedas de $10" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+      <TextField fx:id="txt10" editable="false" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+      <Label text="Monedas de $5" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+      <TextField fx:id="txt5" editable="false" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+      <Label text="Monedas de $2" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+      <TextField fx:id="txt2" editable="false" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+      <Label text="Monedas de $1" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+      <TextField fx:id="txt1" editable="false" prefWidth="80.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+   </GridPane>
+</VBox>
